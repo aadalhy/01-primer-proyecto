@@ -2,9 +2,9 @@
 
 <div class="row">
     <div class="col">
-       <app-personajes [personajes]="personajes"></app-personajes>
+       <app-personajes [personajes]="listaPersonajes"></app-personajes>
     </div>
     <div class="col">
-        <app-agregar [personajes]="personajes" [nuevo]="nuevo"></app-agregar>
+        <app-agregar  [nuevo]="nuevo" (nuevoPersonaje)="agregarNuevoPersonaje( $event )"></app-agregar>
     </div>
 </div>
