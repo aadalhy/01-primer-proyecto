@@ -8,24 +8,24 @@ import { Personaje } from '../interfaces/dbz.interface';
 })
 export class MainPageComponent implements OnInit {
 
-  listaPersonajes: Personaje[]=[
-    {
-      nombre: 'Goku',
-      poder: 10000
-    },
-    {
-      nombre: 'Trunks',
-      poder: 8000
-    },
-    {
-      nombre: 'Vegeta',
-      poder: 9000
-    },
-    {
-      nombre: 'Piccolo',
-      poder: 7000
-    }
-  ]
+  // listaPersonajes: Personaje[]=[
+  //   {
+  //     nombre: 'Goku',
+  //     poder: 10000
+  //   },
+  //   {
+  //     nombre: 'Trunks',
+  //     poder: 8000
+  //   },
+  //   {
+  //     nombre: 'Vegeta',
+  //     poder: 9000
+  //   },
+  //   {
+  //     nombre: 'Piccolo',
+  //     poder: 7000
+  //   }
+  // ]
 
   nuevo: Personaje =
       {
@@ -38,11 +38,11 @@ export class MainPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  agregarNuevoPersonaje(argumento:Personaje)
-  {
-    console.log(argumento);
-    this.listaPersonajes.push(argumento);
-  }
+  // agregarNuevoPersonaje(argumento:Personaje)
+  // {
+  //   console.log(argumento);
+  //   this.listaPersonajes.push(argumento);
+  // }
 
   // cambiarNombre(event:any)
   // {
